@@ -27,7 +27,7 @@ export default function Listing() {
   const [contact, setContact] = useState(false);
   const params = useParams();
   const { currentUser } = useSelector((state) => state.user);
-
+  console.log("lsiting", listing?.imageUrls[0]);
   useEffect(() => {
     const fetchListing = async () => {
       try {
